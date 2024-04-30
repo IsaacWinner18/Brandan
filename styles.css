@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: white;
+  background-color: rgb(223, 235, 238);
   color: white;
 }
 
@@ -128,23 +128,29 @@ body {
 }
 
 .latest-drop {
-  margin-top: 100px;
+  color: black;
+  margin-top: 60px;
   margin-bottom: 40px;
-  margin-left: 40px;
+  margin-left: 20px;
   font-size: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .section-two {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1.4rem;
-  justify-content: center;
+
+  overflow-x: scroll;
+  margin-left: 20px;
+  
 }
 
 .first-sneak {
-  width: 170px;
-  background-color: aqua;
+  width: 300px;
+}
+
+.first-sneak:hover {
   border: 1px solid red;
 }
 
@@ -155,12 +161,36 @@ body {
 
 .first-sneak p:nth-child(3) {
   color: rgb(0, 0, 0);
-  font-family: monospace;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 17px;
 }
 
 .shoe-img {
-  width: 170px;
+  width: 300px;
+  height: 300px;
+}
+
+.price {
+  position: relative;
+  bottom: 50px;
+  margin-left: 10px;
+  background-color: rgb(223, 235, 238);
+  display: inline-block;
+  padding: 6px 9px;
+}
+
+.shoe-name {
+  position: relative;
+  bottom: 70px;
+  margin-left: 10px;
+}
+
+.shoe-sig {
+  position: relative;
+  bottom: 78px;
+  margin-left: 10px;
+  color: black;
+  opacity: 0.5;
 }
 
 .footer {
