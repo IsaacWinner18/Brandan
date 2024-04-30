@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: white;
+  color: white;
 }
 
 .navbar {
@@ -12,30 +14,51 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  display: block;
   transition: top 0.3s;
   z-index: 1;
 }
 
 .navbar span {
   color: beige;
-  padding: 20px;
   font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 7px;
 }
 
 .the-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   gap: 2rem;
+  margin-top: -23px;
 }
 
 .navbar a {
-  color: white;
   text-decoration: none;
   font-weight: 800;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-right: 10px;
+  color: white;
+}
+
+.login-btn {
+  background-color: rgb(0, 0, 0);
+  padding: 5px 7px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  box-shadow: 2px 0px 4px rgba(225, 225, 225, 0.4);
+}
+
+.sign-btn {
+  background-color: rgb(0, 0, 0);
+  padding: 5px 7px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  box-shadow: 2px 0px 4px rgba(225, 225, 225, 0.4);
+}
+
+.login-btn:hover {
+  transform: skewX(20deg) rotateX(40deg);
 }
 
 .closebtn {
@@ -48,39 +71,49 @@ body {
 }
 
 .navbar a:hover {
-  color: rgb(112, 105, 105);
+  color: rgb(146, 137, 137);
+  transform: rotateX(40deg);
 }
 
 .section-one {
   background-image: url(images/DSC09180_b72d3bcb-78e3-40f0-bf3b-fc7e95723bdc_1080x.webp);
   background-size: cover;
   width: 100%;
-  height: 670px;
+  height: 640px;
+  background-repeat: no-repeat;
 }
 
 .brandan-header {
   color: white;
   padding-top: 200px;
-  text-align: center;
-  /* padding-left: 180px; */
-  margin-bottom: 50px;
+  padding-left: 40px;
+  margin-bottom: 16px;
   letter-spacing: 5px;
-  font-size: 60px;
+  font-size: 55px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.under-note {
+  color: rgb(243, 236, 236);
+  padding-left: 40px;
+  letter-spacing: 5px;
+  font-size: 17px;
+  margin-bottom: 40px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .shop-now {
-  color: rgb(0, 0, 0);
+  color: rgb(46, 45, 45);
   cursor: pointer;
-  max-width: 120px;
+  max-width: 340px;
   padding: 20px;
-  /* height: 50px; */
-  margin: auto;
+  margin-left: 40px;
   letter-spacing: 5px;
-  font-size: 20px;
-  background-color: rgb(255, 255, 255);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 17px;
+  background-color: rgb(235, 233, 233);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .shop-now:hover {
@@ -88,47 +121,10 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-.section-two {
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.mens-sec,
-.womens-sec {
-  border: 1px solid rgb(0, 2, 128);
-  background-size: cover;
-  height: 400px;
-  color: white;
-  text-align: center;
-}
-
-.mens-sec {
-  opacity: 0.8;
-  background-image: url(images/mensfit.jpg);
-  width: 50%;
-}
-
-.mens-sec p {
-  color: rgb(231, 222, 222);
-  font-size: 46px;
-  font-weight: 800;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 150px;
-}
-
-.womens-sec {
-  opacity: 0.8;
-  background-image: url(images/womenfit.jpg);
-  width: 50%;
-}
-
-.womens-sec p {
-  color: rgb(0, 118, 253);
-  font-weight: 800;
-  font-size: 39px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 150px;
+.socials {
+  position: relative;
+  top: 30px;
+  padding:20px 48px;
 }
 
 .latest-drop {
@@ -139,7 +135,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.section-three {
+.section-two {
   display: flex;
   flex-wrap: wrap;
   gap: 1.4rem;
@@ -148,6 +144,8 @@ body {
 
 .first-sneak {
   width: 170px;
+  background-color: aqua;
+  border: 1px solid red;
 }
 
 .first-sneak p:nth-child(2) {
@@ -301,23 +299,9 @@ textarea:hover {
   }
 }
 
-@media screen and (min-width: 701px) {
-  .mens-sec:hover {
-    background-image: url(images/mensfit.jpg);
-    width: 52%;
-    transition: 1s;
-  }
-
-  .womens-sec:hover {
-    background-image: url(images/womenfit.jpg);
-    width: 52%;
-    transition: 1s;
-  }
-}
-
 /* for small devices { like mobile, tablet } */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
   .overlay {
     height: 100%;
     width: 0%;
@@ -329,6 +313,14 @@ textarea:hover {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+  }
+
+  .section-one {
+    background-image: url(images/DSC09180_b72d3bcb-78e3-40f0-bf3b-fc7e95723bdc_1080x.webp);
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
   }
 
   .the-links {
@@ -374,15 +366,37 @@ textarea:hover {
     top: -0px;
   }
 
-  .section-two {
-    flex-direction: column;
+  .brandan-header {
+    color: white;
+    padding-top: 200px;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    font-size: 29px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
-
-  .mens-sec,
-  .womens-sec {
-    width: 100%;
-    height: 400px;
-    background-size: cover;
+  
+  .under-note {
+    color: rgb(243, 236, 236);
+    padding-left: 20px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .shop-now {
+    color: rgb(46, 45, 45);
+    cursor: pointer;
+    max-width: 190px;
+    padding: 20px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    background-color: rgb(235, 233, 233);
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .shoe-img {
@@ -391,19 +405,6 @@ textarea:hover {
 
   .first-sneak {
     width: 230px;
-  }
-
-  .shop-now {
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    max-width: 130px;
-    padding: 20px;
-    /* height: 50px; */
-    margin: auto;
-    letter-spacing: 5px;
-    font-size: 20px;
-    background-color: rgb(255, 255, 255);
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
   
 }
