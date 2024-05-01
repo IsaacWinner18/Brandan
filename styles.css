@@ -359,7 +359,7 @@ textarea:hover {
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center;
+   padding-left: 8px;
   }
 
   .the-links a {
@@ -368,11 +368,17 @@ textarea:hover {
     color: #818181;
     display: block;
     transition: 0.3s;
+    
+  }
+
+  .login-btn, .sign-btn{
+    text-align: center;
   }
 
   .overlay a:hover,
   .overlay a:focus {
     color: #f1f1f1;
+    background-color: rgb(143, 143, 151);
   }
 
   .closebtn {
@@ -430,11 +436,12 @@ textarea:hover {
   }
 
   .shoe-img {
-    width: 230px;
+    width: 180px;
+    height: 180px;
   }
 
   .first-sneak {
-    width: 230px;
+    width: 180px;
   }
   
 }

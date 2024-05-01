@@ -1,5 +1,5 @@
 function openNav() {
-    document.querySelector("#myNav").style.width = "100%";
+    document.querySelector("#myNav").style.width = "50%";
 }
 
 function closeNav() {
